@@ -24,7 +24,7 @@ public class ActivitiTest {
     @RequestMapping("/testactiviti")
     public void testActiviti() {
 
-        //根据bpmn文件部署流程
+        //根据bpmn文件部署activiti流程
         //Deployment deployment = repositoryService.createDeployment().addClasspathResource("processes/easytest.bpmn").deploy();
         //获取流程定义
         ProcessDefinition processDefinition = repositoryService.createProcessDefinitionQuery().processDefinitionKey("easytest").singleResult();
